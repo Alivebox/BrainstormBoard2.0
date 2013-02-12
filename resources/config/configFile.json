@@ -1,0 +1,10 @@
+{
+
+    "localizationEnabled":true,
+
+    "localeFilesBaseUrls":[
+        "resources/locales/ext-lang-",
+        "resources/locales/framework-lang-"
+    ]
+
+}
