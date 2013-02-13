@@ -1,9 +1,0 @@
-{
-
-    "localizationEnabled":true,
-
-    "localeFilesBaseUrls":[
-        "resources/locales/ext-lang-"
-    ]
-
-}

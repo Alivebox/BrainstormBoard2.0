@@ -1,0 +1,181 @@
+/** BOARD VIEW STYLES - START */
+
+.boardView {
+	background: url("boardimages/brainstorm_board_bgr.gif") repeat scroll center center transparent;
+	width: auto;
+	height: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+}
+
+.dragSelectionBox {
+	background-color: red;
+	opacity: 0.4;
+}
+
+.boardViewPostItToolbar {
+	width: 146px !important;
+	height: 68px !important;
+	background: url("boardimages/post_it_main_toolbar_border.png") no-repeat scroll 0 0 transparent;
+	margin: 0 auto;
+	padding: 10px;
+	z-index: 20000;
+	position: relative;
+	visibility: hidden;
+}
+
+.boardViewPostItToolbarVisible {
+	visibility: visible !important;
+}
+
+/** BOARD VIEW STYLES - END */
+
+/** POSTIT WINDOW STYLES - START */
+
+.postItWindow {
+	background: url("boardimages/post_it_shadow.png") no-repeat scroll bottom right transparent;
+	border-radius: 0;
+	border-style: none;
+	padding: 14px;
+	margin:0;
+	box-shadow: none;
+	overflow: hidden;
+	-moz-transform-origin: 0 0;
+	-webkit-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	-o-transform-origin: 0 0;
+}
+
+.postItWindow .x-resizable-handle-southeast {
+	right: 14px;
+	bottom: 14px;
+}
+
+.postItWindow .x-window-body-default {
+	background-color: transparent;
+	border-style: none;
+	border-width: 0;
+	overflow: hidden !important;
+}
+
+.postItWindowTape {
+	background: url("boardimages/post_it_tape.png") no-repeat scroll 0 0 transparent;
+	border-style: none;
+	padding: 0;
+	margin:0 auto;
+	position: relative;
+	width: 80px;
+	height: 30px;
+}
+
+.postItWindowMainContainer {
+	background: #1a82f7;
+	background: -moz-linear-gradient(135deg, #1a82f7, #2F2727);
+	background: -webkit-linear-gradient(135deg, #1a82f7, #2F2727);
+	background: -ms-linear-gradient(135deg, #1a82f7, #2F2727);
+	background: -o-linear-gradient(135deg, #1a82f7, #2F2727);
+	width: 100%;
+	height: 100%;
+	margin-top: 12px;
+	padding-top: 14px;
+}
+
+/** POSTIT WINDOW STYLES - END */
+
+/** POSTIT WINDOW TOOLBAR STYLES - START */
+
+.postItWindowToolbar {
+	top: 16px !important;
+	cursor: move;
+}
+
+.hiddenToolbar {
+	visibility: hidden;
+}
+
+.postItSettingsButtonSmall {
+	background: transparent url('boardimages/post_it_settings_small.png') no-repeat scroll top right;
+	border-style: none;
+	border-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: right;
+	margin-right: 3px;
+}
+
+.postItDeleteButtonSmall {
+	background: transparent url('boardimages/post_it_delete_small.png') no-repeat scroll top right;
+	border-style: none;
+	border-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: right;
+	margin-right: 3px;
+}
+
+.postItSettingsButtonBig {
+	background: transparent url('boardimages/post_it_settings_big.png') no-repeat scroll top right;
+	border-style: none;
+	border-color: transparent;
+	width: 30px;
+	height: 30px;
+	margin-left: 20px;
+	margin-top: 6px;
+}
+
+.postItDeleteButtonBig {
+	background: transparent url('boardimages/post_it_delete_big.png') no-repeat scroll top right;
+	border-style: none;
+	border-color: transparent;
+	width: 30px;
+	height: 30px;
+	margin-left: 75px;
+	margin-top: 6px;
+}
+
+/** POSTIT WINDOW TOOLBAR STYLES - END */
+
+/** POSTIT WINDOW TEXT AREA - START */
+
+.postItTextArea {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.postItTextArea .x-form-item-body {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.postItTextArea .x-form-text {
+	background-color: transparent;
+	border-style: none;
+	border-width: 0;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.postItTextArea .x-form-field {
+	background: none;
+	width: 100% !important;
+	height: 90% !important;
+}
+
+/** POSTIT WINDOW TEXT AREA - END */
+
+/** POSTIT WINDOW GHOST STYLES - START */
+
+.x-window-ghost .x-window-body-default {
+	background-color: transparent;
+	border-style: none;
+	border-width: 0;
+}
+
+/** POSTIT WINDOW GHOST STYLES - END */

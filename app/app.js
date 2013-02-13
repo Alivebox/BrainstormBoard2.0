@@ -1,16 +1,27 @@
 Ext.Loader.setConfig({
-    enabled:true
+    enabled:true,
+    paths: {
+        'Framework': 'framework'
+    }
 });
-Ext.Loader.setPath('Framework', 'framework');
-Ext.require(
-    'Framework.Main'
-);
 
 Ext.application({
 
-    name:'AliveTracker',
-
+    requires: [
+        'Framework.Main'
+    ],
+    name:'Brainstorm',
     autoCreateViewport:false,
+
+    controllers: [
+        'Brainstorm.modules.board.controller.PostItZoomController',
+        'Brainstorm.modules.board.controller.PostItSelectionController',
+        'Brainstorm.modules.board.controller.PostItResizeController',
+        'Brainstorm.modules.board.controller.PostItPositionController',
+        'Brainstorm.modules.board.controller.PostItCopyPasteController',
+        'Brainstorm.modules.board.controller.PostItController',
+        'Brainstorm.modules.board.controller.BoardViewController'
+    ],
 
     launch:function () {
         this.loadConfigurationFile();
@@ -38,6 +49,9 @@ Ext.application({
     onFrameworkInitialized:function () {
         Ext.create('Ext.container.Viewport', {
             items:[
+                {
+                    xtype: 'boardview'
+                }
             ]
         });
     }
