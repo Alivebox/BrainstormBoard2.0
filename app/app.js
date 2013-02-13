@@ -38,25 +38,6 @@ Ext.application({
     onFrameworkInitialized:function () {
         Ext.create('Ext.container.Viewport', {
             items:[
-                {
-                    xtype:'container',
-                    items:[
-                        {
-                            xtype:'label',
-                            text:'Hello World'
-                        },
-                        {
-                            xtype:'button',
-                            text:Locales.TEST_LABEL,
-                            listeners:{
-                                scope:this,
-                                click:function () {
-                                    Framework.core.LocalizationManager.setLanguageByAbbreviation("en");
-                                }
-                            }
-                        }
-                    ]
-                }
             ]
         });
     }
